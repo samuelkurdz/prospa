@@ -4,8 +4,24 @@ import Button from "../components/Button";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
 import Select from "../components/Select";
+// import Radio from "../components/Radio";
 
 import { countries } from "../constants/countries";
+
+// const radioOptions = [
+//   {
+//     optionLabel: 'I have a registered business /charity with CAC',
+//     optionValue: 'registered'
+//   },
+//   {
+//     optionLabel: 'My business is not yet registered, I would like to register',
+//     optionValue: 'unregistered'
+//   },
+//   {
+//     optionLabel: 'I’m a freelancer I do business in my personal name',
+//     optionValue: 'freelancer'
+//   },
+// ]
 
 const SignUp = () => {
   return (
@@ -18,6 +34,20 @@ const SignUp = () => {
           </p>
         </nav>
 
+        {/* <section className="flex justify-center">
+          <div className="w-[375px]">
+            <header>
+              <h3 className="font-semibold text-3xl">Create your account</h3>
+              <p className="text-subText">
+                A short description about account types
+              </p>
+            </header>
+            <form className="mt-12">
+              <Radio radioName="businessType" options={radioOptions}  />
+              <Button>Next</Button>
+            </form>
+          </div>
+        </section> */}
         <section className="flex justify-center">
           <div className="w-[375px]">
             <header>

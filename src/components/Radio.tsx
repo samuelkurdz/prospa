@@ -1,42 +1,27 @@
-const Radio = () => {
+type RadioProps = {
+  radioName: string;
+  options: {optionLabel: string, optionValue: any}[]
+};
+
+const Radio = ({ radioName, options}: RadioProps) => {
   return (
     <div className="block">
-      <span className="text-gray-700">Radio Buttons</span>
       <div className="mt-2">
-        <div>
-          <label className="inline-flex items-center">
-            <input
-              className="form-radio"
-              type="radio"
-              checked
-              name="radio-direct"
-              value="1"
-            />
-            <span className="ml-2">Option 1</span>
-          </label>
-        </div>
-        <div>
-          <label className="inline-flex items-center">
-            <input
-              className="form-radio"
-              type="radio"
-              name="radio-direct"
-              value="2"
-            />
-            <span className="ml-2">Option 2</span>
-          </label>
-        </div>
-        <div>
-          <label className="inline-flex items-center">
-            <input
-              className="form-radio"
-              type="radio"
-              name="radio-direct"
-              value="3"
-            />
-            <span className="ml-2">Option 3</span>
-          </label>
-        </div>
+        {
+          options.map(({optionLabel, optionValue}) => (
+            <div key={optionValue} className="hover:shadow-lg py-6 px-4">
+            <label className="inline-flex items-center">
+              <input
+                className="form-radio bg-green-500"
+                type="radio"
+                name={radioName}
+                value={optionValue}
+              />
+              <span className="ml-2 font-semibold">{optionLabel}</span>
+            </label>
+          </div>
+          ))
+        }
       </div>
     </div>
   );
