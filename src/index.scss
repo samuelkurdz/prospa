@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 // body {
 //   margin: 0;
 //   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,15 +11,6 @@
 //   -moz-osx-font-smoothing: grayscale;
 // }
 
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-button {
-  @apply rounded-md bg-gray-900 text-center py-2 px-4 text-white
+html {
+  font-size: 14px;
 }

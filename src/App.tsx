@@ -1,16 +1,16 @@
-import React from "react";
-import { ReactComponent as Logo } from './assets/logo.svg';
-import { ReactComponent as Safe } from './assets/safe.svg';
-import "./App.scss";
+import React, {  } from "react";
+import { Route, Routes } from 'react-router-dom';
+// import "./App.scss";
+import Login from './pages/login';
+import SignUp from './pages/signup';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Logo fill="black" />
-        <button>Buttin</button>
-        <Safe />
-      </header>
+      <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+      </Routes>
     </div>
   );
 }
