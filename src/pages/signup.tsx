@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
+import Select from "../components/Select";
+
+import { countries } from "../constants/countries";
 
 const SignUp = () => {
   return (
@@ -23,11 +26,26 @@ const SignUp = () => {
                 A short description about account types
               </p>
             </header>
-            {/* <form className="mt-12">
-              <Input inputName="User Name" type="text" />
-              <Input inputName="User Phone" type="number" />
+            <form className="mt-12">
+              <Input inputName="firstName" type="text" label="First name" />
+              <Input inputName="lastName" type="text" label="Last name" />
+              <div className="grid grid-cols-3 gap-3">
+                <div>
+                  <Select
+                    inputName="country"
+                    label="Country"
+                    options={countries}
+                    optionLabel="dialCode"
+                    optionValue="isoCode"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <Input inputName="mobile" type="text" label="Mobile number" />
+                </div>
+              </div>
+              <Input inputName="email" type="email" label="Email Address" />
               <Button>Next</Button>
-            </form> */}
+            </form>
           </div>
         </section>
       </div>

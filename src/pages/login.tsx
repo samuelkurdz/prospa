@@ -25,8 +25,8 @@ const Login = () => {
               </p>
             </header>
             <form className="mt-12">
-              <Input inputName="email" type="text" label="Email address" required />
-              <Input inputName="password" type="number" label="Enter password" required/>
+              <Input inputName="email" type="email" label="Email address" required />
+              <Input inputName="password" type="password" label="Enter password" required/>
               <Button>Next</Button>
             </form>
           </div>
