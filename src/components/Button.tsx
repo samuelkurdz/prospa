@@ -1,12 +1,8 @@
 import React, { PropsWithChildren } from "react";
 
-interface ButtonProps {
-  name: string;
-}
-
-const Button = ({ name, children }: PropsWithChildren<ButtonProps>) => {
+const Button = ({ children }: PropsWithChildren<{}>) => {
   return (
-    <button className="bg-primary text-white py-4 px-11 rounded-md">
+    <button className="bg-primary text-white py-4 px-11 rounded-md w-full">
       {children}
     </button>
   )

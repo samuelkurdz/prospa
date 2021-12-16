@@ -11,6 +11,10 @@ module.exports = {
         signup: '#7E51FF'
       }
     },
+    linearBorderGradients: theme => ({
+      colors: theme('colors'),
+      background: theme('colors'),
+      }),
   },
-  plugins: [],
+  plugins: ['tailwindcss-border-gradient-radius'],
 }
