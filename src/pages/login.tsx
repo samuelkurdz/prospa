@@ -27,7 +27,7 @@ const Login = () => {
             <form className="mt-12">
               <Input inputName="email" type="email" label="Email address" required />
               <Input inputName="password" type="password" label="Enter password" required/>
-              <Button>Next</Button>
+              <Button fullWidth>Next</Button>
             </form>
           </div>
         </section>

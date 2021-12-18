@@ -74,7 +74,7 @@ const SignUp = () => {
                 </div>
               </div>
               <Input inputName="email" type="email" label="Email Address" />
-              <Button>Next</Button>
+              <Button fullWidth>Next</Button>
             </form>
           </div>
         </section>

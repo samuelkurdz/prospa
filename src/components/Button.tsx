@@ -1,8 +1,11 @@
 import React, { PropsWithChildren } from "react";
 
-const Button = ({ children }: PropsWithChildren<{}>) => {
+interface ButtonProps {
+  fullWidth?: boolean;
+}
+const Button = ({ children, fullWidth }: PropsWithChildren<ButtonProps>) => {
   return (
-    <button className="bg-primary text-white py-4 px-11 rounded-md w-full">
+    <button className={`bg-primary text-white py-4 px-11 rounded-md ${fullWidth ? 'w-full' : 'w-fit'}`}>
       {children}
     </button>
   )

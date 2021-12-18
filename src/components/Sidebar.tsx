@@ -6,6 +6,7 @@ import { ReactComponent as Safe } from "../assets/safe.svg";
 type SidebarProps = {
   signup?: boolean;
 }
+
 function Sidebar({ signup }: SidebarProps) {
   return (
     <aside className={`${signup ? 'bg-signup' : 'bg-secondary'} h-screen text-white p-8 flex flex-col`}>
