@@ -1,6 +1,7 @@
 import Button from '../../components/Button';
 import AccountTypes from '../dash-contents/account-types';
 import Summary from '../dash-contents/summary';
+import Transactions from '../dash-contents/transactions';
 
 const DashboardContent = () => {
   return (
@@ -18,6 +19,8 @@ const DashboardContent = () => {
       <AccountTypes />
 
       <Summary />
+
+      <Transactions />
     </>
   );
 };
