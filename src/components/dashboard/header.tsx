@@ -1,5 +1,4 @@
 import { ReactComponent as Bell } from "../../assets/bell.svg";
-import { ReactComponent as Profile } from "../../assets/profile.svg";
 
 const Header = () => {
   return (
@@ -7,7 +6,7 @@ const Header = () => {
     <h3 className="text-2xl text-subText">Dashboard</h3>
     <div className="flex items-center space-x-4">
       <Bell className="cursor-pointer" />
-      <Profile className="cursor-pointer" />
+      <img src='https://svgshare.com/i/cxm.svg' title='profile-svg' alt="profile" className="cursor-pointer" />
     </div>
   </header>
   )

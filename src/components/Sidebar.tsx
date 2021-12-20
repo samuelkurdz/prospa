@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../assets/logo.svg";
-import { ReactComponent as Safe } from "../assets/safe.svg";
+import Safe from './safe';
 
 type SidebarProps = {
   signup?: boolean;
@@ -34,7 +34,8 @@ function Sidebar({ signup }: SidebarProps) {
           </p>
         </div>
 
-        <Safe width="100%" />
+        <Safe />
+        {/* <img src='https://svgshare.com/i/cxS.svg' title='safe-svg' alt="safe" /> */}
 
         <p>&copy; 2020 Prospa Inc</p>
       </div>
