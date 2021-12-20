@@ -10,7 +10,7 @@ import { useState } from "react";
 const Aside = () => {
   const [showOptions, setShowOptions] = useState<boolean>(false);
   return (
-    <aside className="bg-white h-full z-0 shadow-xl flex flex-col relative">
+    <aside className="bg-white h-full z-0 shadow-xl hidden lg:flex lg:flex-col relative">
       <div className="h-20 border-b-2 border-[#EEEFF7] px-8 py-5 flex justify-between items-center">
         <div className="flex gap-4">
           <span className="w-10 h-10 rounded-full p-4 bg-secondary text-white font-medium text-xs flex justify-center items-center">

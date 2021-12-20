@@ -11,11 +11,11 @@ const dashContainer: CSSProperties = {
 }
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-5 h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-5 h-screen">
       <Aside />
       <div className="col-span-4 bg-[#F4F8FB] h-full">
         <Header />
-        <section className="py-9 px-20" style={dashContainer}>
+        <section className=" p-6 md:py-9 md:px-20" style={dashContainer}>
           <DashboardContent />
         </section>
       </div>

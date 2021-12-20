@@ -2,7 +2,7 @@
 import { ReactComponent as AccountBox } from "../../assets/account-box.svg";
 
 function AccountTypes() {
-  return <div className="mt-9 flex gap-9">
+  return <div className="mt-9 flex flex-col md:flex-row gap-9">
     <div className="basis-1/2 bg-white px-6 py-4 rounded-md shadow-md space-y-14">
       <div className="flex justify-between items-center">
         <div>
