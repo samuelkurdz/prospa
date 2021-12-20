@@ -14,7 +14,7 @@ function AccountTypes() {
         </div>
       </div>
       <p className="font-medium text-4xl">
-        ₦39,342.45
+        ₦814,800<sub>.45</sub>
       </p>
     </div>
     <div className="basis-1/2 bg-white px-6 py-4 rounded-md shadow-md space-y-14">
@@ -28,7 +28,7 @@ function AccountTypes() {
         </div>
       </div>
       <p className="font-medium text-4xl">
-        ₦39,342.45
+        ₦39,342<sub>.45</sub>
       </p>
     </div>
   </div>;

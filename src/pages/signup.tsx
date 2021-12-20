@@ -25,10 +25,10 @@ import { countries } from "../constants/countries";
 
 const SignUp = () => {
   return (
-    <div className="signup grid grid-cols-5">
+    <div className="login grid grid-cols-1 lg:grid-cols-5">
       <Sidebar signup />
       <div className="col-span-4 h-screen">
-        <nav className="flex justify-end pt-9 px-24 font-semibold mb-28">
+        <nav className="flex justify-end p-5 md:pt-9 md:px-24 font-semibold mb-12 md:mb-28">
           <p>
             Already a member? <Link to={"/"}>Sign In</Link>
           </p>
@@ -49,7 +49,7 @@ const SignUp = () => {
           </div>
         </section> */}
         <section className="flex justify-center">
-          <div className="w-[375px]">
+          <div className=" w-11/12 md:w-[375px]">
             <header>
               <h3 className="font-semibold text-3xl">Create your account</h3>
               <p className="text-subText">
