@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import Sidebar from "../components/Sidebar";
 
 const Login = () => {
+  let navigate = useNavigate();
   return (
     <div className="login grid grid-cols-1 lg:grid-cols-5">
       <Sidebar />
@@ -27,7 +28,7 @@ const Login = () => {
             <form className="mt-12">
               <Input inputName="email" type="email" label="Email address" required />
               <Input inputName="password" type="password" label="Enter password" required/>
-              <Button fullWidth>Next</Button>
+              <Button fullWidth onClick={() => navigate('/home')}>Next</Button>
             </form>
           </div>
         </section>

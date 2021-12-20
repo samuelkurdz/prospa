@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
@@ -24,6 +24,8 @@ import { countries } from "../constants/countries";
 // ]
 
 const SignUp = () => {
+  let navigate = useNavigate();
+
   return (
     <div className="login grid grid-cols-1 lg:grid-cols-5">
       <Sidebar signup />
@@ -74,7 +76,7 @@ const SignUp = () => {
                 </div>
               </div>
               <Input inputName="email" type="email" label="Email Address" />
-              <Button fullWidth>Next</Button>
+              <Button fullWidth onClick={() => navigate('/login')}>Next</Button>
             </form>
           </div>
         </section>
