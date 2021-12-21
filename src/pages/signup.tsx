@@ -51,7 +51,7 @@ const SignUp = () => {
           </div>
         </section> */}
         <section className="flex justify-center">
-          <div className=" w-11/12 md:w-[375px]">
+          <div className=" w-11/12 md:w-375">
             <header>
               <h3 className="font-semibold text-3xl">Create your account</h3>
               <p className="text-subText">

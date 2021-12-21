@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
+
 module.exports = {
-  plugins: [
-    // require('postcss-import'),
-    // require('postcss-nested'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ]
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+    ...(NODE_ENV === 'production' ? { cssnano: {} } : {})
+  }
 }

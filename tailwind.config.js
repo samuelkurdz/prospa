@@ -1,9 +1,7 @@
 module.exports = {
-  purge: {
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
     ],
-  },
   theme: {
     extend: {
       colors: {
@@ -11,6 +9,9 @@ module.exports = {
         secondary: '#1C1335',
         subText: '#8397AB',
         signup: '#7E51FF'
+      },
+      width: {
+        '375': '375px',
       }
     },
     linearBorderGradients: theme => ({
