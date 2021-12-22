@@ -4,24 +4,36 @@ import Button from "../components/Button";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
 import Select from "../components/Select";
-// import Radio from "../components/Radio";
+import Radio from "../components/Radio";
 
 import { countries } from "../constants/countries";
 
-// const radioOptions = [
-//   {
-//     optionLabel: 'I have a registered business /charity with CAC',
-//     optionValue: 'registered'
-//   },
-//   {
-//     optionLabel: 'My business is not yet registered, I would like to register',
-//     optionValue: 'unregistered'
-//   },
-//   {
-//     optionLabel: 'I’m a freelancer I do business in my personal name',
-//     optionValue: 'freelancer'
-//   },
-// ]
+const radioOptions = [
+  {
+    optionLabel: 'I have a registered business /charity with CAC',
+    optionValue: 'registered',
+    optionDetailHeader: 'As a registered business you’ll get:',
+    optionDetail: [
+      'Account in your business name',
+      'Send to and receive transfers from all Nigerian banks',
+      'Tools for business management'
+    ]
+  },
+  {
+    optionLabel: 'My business is not yet registered, I would like to register',
+    optionValue: 'unregistered',
+    optionDetailHeader: 'Everything you need to start your business',
+    optionDetail: [
+      'Registered business name with the CAC',
+      'Send to and receive transfers from all Nigerian banks',
+      'Tools for business management'
+    ]
+  },
+  {
+    optionLabel: 'I’m a freelancer I do business in my personal name',
+    optionValue: 'freelancer'
+  },
+]
 
 const SignUp = () => {
   let navigate = useNavigate();
@@ -36,21 +48,21 @@ const SignUp = () => {
           </p>
         </nav>
 
-        {/* <section className="flex justify-center">
-          <div className="w-[375px]">
+        <section className="flex justify-center">
+          <div className="w-11/12 md:w-375">
             <header>
               <h3 className="font-semibold text-3xl">Create your account</h3>
               <p className="text-subText">
                 A short description about account types
               </p>
             </header>
-            <form className="mt-12">
+            <form className="mt-6 md:mt-12 space-y-8">
               <Radio radioName="businessType" options={radioOptions}  />
-              <Button>Next</Button>
+              <Button fullWidth>Next</Button>
             </form>
           </div>
-        </section> */}
-        <section className="flex justify-center">
+        </section>
+        {/* <section className="flex justify-center">
           <div className=" w-11/12 md:w-375">
             <header>
               <h3 className="font-semibold text-3xl">Create your account</h3>
@@ -58,7 +70,7 @@ const SignUp = () => {
                 A short description about account types
               </p>
             </header>
-            <form className="mt-12">
+            <form className="mt-6 md:mt-12">
               <Input inputName="firstName" type="text" label="First name" />
               <Input inputName="lastName" type="text" label="Last name" />
               <div className="grid grid-cols-3 gap-3">
@@ -81,7 +93,7 @@ const SignUp = () => {
               </Button>
             </form>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

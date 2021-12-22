@@ -25,7 +25,7 @@ const Login = () => {
                 all in one place
               </p>
             </header>
-            <form className="mt-12">
+            <form className="mt-6 md:mt-12">
               <Input
                 inputName="email"
                 type="email"
