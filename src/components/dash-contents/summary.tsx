@@ -75,15 +75,15 @@ function Summary() {
         <div className="flex gap-3 md:gap-10">
           <div>
             <p className="text-subText text-sm">Money In</p>
-            <p className="font-semibold text-sm">N 5,650,000</p>
+            <p className="font-semibold text-sm">₦ 5,650,000</p>
           </div>
           <div>
             <p className="text-subText text-sm">Money In</p>
-            <p className="font-semibold text-sm">N 5,650,000</p>
+            <p className="font-semibold text-sm">₦ 5,650,000</p>
           </div>
           <div>
             <p className="text-subText text-sm">Money In</p>
-            <p className="font-semibold text-sm">N 5,650,000</p>
+            <p className="font-semibold text-sm">₦ 5,650,000</p>
           </div>
         </div>
         <Chart />
@@ -113,7 +113,7 @@ function Summary() {
               <p className="text-subText">Bank Fees</p>
             </div>
             <div>
-              <p className="text-sm font-semibold"> - N 250,000</p>
+              <p className="text-sm font-semibold"> - ₦ 250,000</p>
               <svg
                 width="190"
                 height="6"
@@ -147,7 +147,7 @@ function Summary() {
               <p className="text-subText">Internet</p>
             </div>
             <div>
-              <p className="text-sm font-semibold"> - N 250,000</p>
+              <p className="text-sm font-semibold"> - ₦ 250,000</p>
               <svg
                 width="190"
                 height="6"
@@ -181,7 +181,7 @@ function Summary() {
               <p className="text-subText">Marketing</p>
             </div>
             <div>
-              <p className="text-sm font-semibold"> - N 250,000</p>
+              <p className="text-sm font-semibold"> - ₦ 250,000</p>
               <svg
                 width="190"
                 height="6"
@@ -215,7 +215,7 @@ function Summary() {
               <p className="text-subText">Transfer</p>
             </div>
             <div>
-              <p className="text-sm font-semibold"> - N 250,000</p>
+              <p className="text-sm font-semibold"> - ₦ 250,000</p>
               <svg
                 width="190"
                 height="6"

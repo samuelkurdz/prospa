@@ -5,22 +5,22 @@ import { ReactComponent as Transact } from '../../assets/transacte.svg';
 const transdata = [
   {
     title: "Transfer Fee",
-    price: "-N145.90",
+    price: "-₦145.90",
     iconType: "trans",
   },
   {
     title: "Adam Chapman",
-    price: "-N2,000.00",
+    price: "-₦2,000.00",
     iconType: "not",
   },
   {
     title: "Shirley Barnes",
-    price: "-N2,000.00",
+    price: "-₦2,000.00",
     iconType: "not",
   },
   {
     title: "Shirley Barnes",
-    price: "-N2,000.00",
+    price: "-₦2,000.00",
     iconType: "not",
   },
 ];
