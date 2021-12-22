@@ -37,7 +37,7 @@ function Transactions() {
 
       <div>
         {transdata.map(({ title, price, iconType }, index) => (
-          <>
+          <div key={title + index}>
             <section className="flex justify-between items-baseline">
               <div className="flex items-center gap-4">
                 <div className="bg-[#F4F8FB] w-10 h-10 flex items-center justify-center rounded-full">
@@ -52,7 +52,7 @@ function Transactions() {
             </section>
 
             {index < transdata.length - 1 ? <div className="w-full h-px bg-[#E6EFF8] my-6"></div> : null}
-          </>
+          </div>
         ))}
       </div>
     </div>

@@ -6,6 +6,7 @@ import { ReactComponent as Transfer } from "../../assets/menu/transfer.svg";
 import { ReactComponent as Invoice } from "../../assets/menu/invoice.svg";
 import { ReactComponent as Other } from "../../assets/menu/other.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Aside = () => {
   const [showOptions, setShowOptions] = useState<boolean>(false);
@@ -44,6 +45,13 @@ const Aside = () => {
           <p className="text-[11px] text-primary font-medium pl-6 mt-3 cursor-pointer">
             Add a business
           </p>
+          <div className="w-full h-px bg-[#E6EFF8] my-3"></div>
+          <Link
+            to={"/login"}
+            className="text-[13px] text-red-700 font-medium pl-6 cursor-pointer"
+          >
+            Logout
+          </Link>
         </div>
       </div>
       <div className="p-8 flex flex-col justify-between h-full">
