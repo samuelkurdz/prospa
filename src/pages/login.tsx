@@ -26,9 +26,21 @@ const Login = () => {
               </p>
             </header>
             <form className="mt-12">
-              <Input inputName="email" type="email" label="Email address" required />
-              <Input inputName="password" type="password" label="Enter password" required/>
-              <Button fullWidth onClick={() => navigate('/home')}>Next</Button>
+              <Input
+                inputName="email"
+                type="email"
+                label="Email address"
+                required
+              />
+              <Input
+                inputName="password"
+                type="password"
+                label="Enter password"
+                required
+              />
+              <Button fullWidth onClick={() => navigate("/home")}>
+                Next
+              </Button>
             </form>
           </div>
         </section>

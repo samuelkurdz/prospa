@@ -11,15 +11,11 @@ a {
   color: #FA4A84;
 }
 
-.input-border-gradient {
+.focus\:input-border-gradient:focus {
   background: linear-gradient(to right, #F4F8FB, #F4F8FB),
   linear-gradient(270deg, #00D2FF -8.34%, #7E51FF 50.93%, #FA4A84 106.85%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-}
-
-.gradient-border-2 {
-  border-bottom: 2px solid transparent;
 }
 
 .btn {

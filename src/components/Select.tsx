@@ -24,7 +24,7 @@ const Select = ({
         id={inputName}
         required={!!required}
         placeholder="something some"
-        className="peer h-11 w-full pl-4 text-sm bg-[#F4F8FB] border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:input-border-gradient focus:gradient-border-2"
+        className="peer h-11 w-full pl-4 text-sm bg-[#F4F8FB] border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:input-border-gradient focus:border-b-2 focus:border-transparent"
       >
         {options.map((option) => (
           <option key={option[optionValue]} value={option[optionValue]}>

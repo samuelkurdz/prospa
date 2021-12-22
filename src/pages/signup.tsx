@@ -76,7 +76,9 @@ const SignUp = () => {
                 </div>
               </div>
               <Input inputName="email" type="email" label="Email Address" />
-              <Button fullWidth onClick={() => navigate('/login')}>Next</Button>
+              <Button fullWidth onClick={() => navigate("/login")}>
+                Next
+              </Button>
             </form>
           </div>
         </section>

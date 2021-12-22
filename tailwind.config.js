@@ -19,5 +19,7 @@ module.exports = {
       background: theme('colors'),
       }),
   },
-  plugins: ['tailwindcss-border-gradient-radius'],
+  plugins: [
+    require('tailwindcss-border-gradient-radius'),
+  ],
 }
