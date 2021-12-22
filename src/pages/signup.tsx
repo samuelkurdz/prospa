@@ -17,7 +17,7 @@ const SignUp = () => {
     <div className="login grid grid-cols-1 lg:grid-cols-5">
       <Sidebar signup />
       <div className="col-span-4 h-screen">
-        <nav className="flex justify-between p-5 md:pt-9 md:px-24 font-semibold mb-12 md:mb-28">
+        <nav className="flex items-center justify-between p-5 md:pt-9 md:px-24 font-semibold mb-12 md:mb-28">
           <div>
             <svg
               className={`${step > 0 ? '' : 'hidden'} cursor-pointer`}
