@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavigateFunction, useNavigate } from "react-router-dom";
+
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../constants/animations';
+
 import Button from "../components/Button";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
@@ -14,7 +18,13 @@ const SignUp = () => {
   const [step, setStep] = useState<number>(0);
 
   return (
-    <div className="login grid grid-cols-1 lg:grid-cols-5">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="login grid grid-cols-1 lg:grid-cols-5"
+    >
       <Sidebar signup />
       <div className="col-span-4 h-screen">
         <nav className="flex items-center justify-between p-5 md:pt-9 md:px-24 font-semibold mb-12 md:mb-28">
@@ -49,7 +59,7 @@ const SignUp = () => {
 
         {step < 1 ? UserDetailForm(setStep, step) : userBusinessForm(navigate)}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

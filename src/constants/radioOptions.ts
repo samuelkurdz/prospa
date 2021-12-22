@@ -15,8 +15,8 @@ export const radioOptions = [
     optionDetailHeader: 'Everything you need to start your business',
     optionDetail: [
       'Registered business name with the CAC',
-      'Send to and receive transfers from all Nigerian banks',
-      'Tools for business management'
+      'Tax identification number',
+      'Your account will be automatically opened on completion'
     ]
   },
   {

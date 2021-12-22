@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../constants/animations';
 import Button from "../components/Button";
 import Input from "../components/Input";
 import Sidebar from "../components/Sidebar";
@@ -7,7 +9,13 @@ import Sidebar from "../components/Sidebar";
 const Login = () => {
   let navigate = useNavigate();
   return (
-    <div className="login grid grid-cols-1 lg:grid-cols-5">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="login grid grid-cols-1 lg:grid-cols-5"
+      >
       <Sidebar />
       <div className="col-span-4 h-screen">
         <nav className="flex justify-end p-5 md:pt-9 md:px-24 font-semibold mb-12 md:mb-28">
@@ -45,7 +53,7 @@ const Login = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
