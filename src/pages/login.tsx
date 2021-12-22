@@ -50,3 +50,5 @@ const Login = () => {
 };
 
 export default Login;
+
+// box-shadow: 0px 0px 2px rgba(131, 151, 171, 0.12), 0px 4px 8px rgba(131, 151, 171, 0.24);
